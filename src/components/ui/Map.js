@@ -5,11 +5,11 @@ class Map extends Component {
   render(){
     const mapContainer = <div style={{height: '100%', width: '100%'}}></div>
 
-    const markers = this.props.markers.map((venue,i) => {
+    const markers = this.props.locations.map((location,i) => {
       const marker = {
         position: {
-          lat: venue.location.lat,
-          lng: venue.location.lng
+          lat: location.position.lat,
+          lng: location.position.lng
         }
       }
       return <Marker key={i} {...marker} />

@@ -1,5 +1,5 @@
 import '../stylesheets/index.scss'
-import Map from './Map'
+import Map from './containers/Map'
 import Location from './Location'
 import MapLocationsList from './containers/MapLocationsList'
 
@@ -16,7 +16,6 @@ export const App = ({children}) => {
   return (
 
     <div className="app">
-      This is the REACT app!
 
       <section id="google-map" style={{width:'100%', height:600}}>
         <Map center={center} markers={markers}/>
