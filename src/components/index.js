@@ -7,26 +7,18 @@ export const App = ({children}) => {
 
   const center = {lat:40.688885, lng:-73.977042}
 
-  const markers = [
-    {
-      location: {lat:40.688885, lng:-73.977042}
-    }
-  ]
-
   return (
 
-    <div className="app">
+    <main className="wrapper">
 
-      <section id="google-map" style={{width:'100%', height:600}}>
-        <Map center={center} markers={markers}/>
+      <section id="google-map" style={{width:'100%', height:'100vh'}}>
+        <Map center={center}/>
       </section>
-      <nav id="nav-map">
+      <nav id="nav__map">
         <MapLocationsList />
       </nav>
 
-
-
-    </div>
+    </main>
   )
 }
 
