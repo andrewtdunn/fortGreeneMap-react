@@ -34,7 +34,7 @@ body {
         color: black;
         background: $offWhite;
         /*background-image: url('http://localhost:3333/img/grid.png');*/
-        background-image:url('http://localhost:3000/assets/img/grid.png');
+        background-image:url('/assets/img/grid.png');
         text-shadow: -1px 0 1px rgb(30,242,241) , 1px 0 1px rgb(246,5,10);
         margin-top: 10px;
         width: 200px;
@@ -127,7 +127,7 @@ body {
 
         background: $offWhite;
         /*background-image: url('../../img/grid.png');*/
-        background-image:url('http://localhost:3000/assets/img/grid.png');
+        background-image:url('/assets/img/grid.png');
         //border: 2px solid orange;
         padding: 5px;
         padding-top:20px;
