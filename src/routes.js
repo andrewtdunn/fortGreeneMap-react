@@ -7,6 +7,7 @@ const routes = (
   <Router history={hashHistory}>
     <Route path="/" component={App}>
     </Route>
+    <Route path="*" component={Whoops404}/>
   </Router>
 )
 

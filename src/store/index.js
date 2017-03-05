@@ -10,12 +10,13 @@ const consoleMessages = store => next => action => {
 	console.log('locations', store.getState().allLocations.length)
 	result = next(action)
 
-	let { allLocations, expandLocationDetail } = store.getState()
+	let { allLocations, expandLocationDetail, selectedLocation } = store.getState()
 
 	console.log(`
 
 		locations: ${allLocations.length}
     expandLocationDetail: ${expandLocationDetail}
+    selectedLocation: ${selectedLocation}
 
 	`)
 

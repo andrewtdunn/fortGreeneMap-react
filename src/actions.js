@@ -1,7 +1,7 @@
 import C from './constants'
 import fetch from 'isomorphic-fetch'
 
-export function selectLocation(id){
+export const selectLocation = function(id){
 
   return {
     type: C.SELECT_LOCATION,
@@ -9,10 +9,16 @@ export function selectLocation(id){
   }
 }
 
-export function expandLocationDetail(id){
+export const expandLocationDetail = function(){
 
   return {
-    type: C.EXPAND_LOCATION_DETAIL,
-    payload: id
+    type: C.EXPAND_LOCATION_DETAIL
+  }
+}
+
+export const collapseLocationDetail = function(){
+
+  return {
+    type: C.COLLAPSE_LOCATION_DETAIL
   }
 }

@@ -5,14 +5,12 @@ import MapLocationsList from './containers/MapLocationsList'
 
 export const App = ({children}) => {
 
-  const center = {lat:40.688885, lng:-73.977042}
-
   return (
 
     <main className="wrapper">
 
       <section id="google-map" style={{width:'100%', height:'100vh'}}>
-        <Map center={center}/>
+        <Map/>
       </section>
       <nav id="nav__map">
         <MapLocationsList />

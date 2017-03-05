@@ -1,3 +1,4 @@
+@import "reset";
 @import "globals";
 @import "fonts";
 
@@ -47,6 +48,8 @@ body {
         line-height: 1.3em;
 
 
+
+
         &:hover{
             background: $overState;
         }
@@ -86,6 +89,10 @@ body {
                 font-family:"Arial";
 
             }
+        }
+
+        &.selected{
+          background: $lightGray;
         }
 
 
@@ -414,4 +421,13 @@ body {
 
     }
 
+}
+
+div.whoops-404 {
+  background-color: white;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }

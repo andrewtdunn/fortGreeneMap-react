@@ -3,14 +3,13 @@ import { Link } from 'react-router'
 import LocationButton from './LocationButton'
 
 
-const MapLocationsList = ({locations}) => {
+const MapLocationsList = ({locations, selectedLocation, onSelectLocation=f=>f}) => {
+
     return(
       <ul>{locations.map((location, i) =>
-        <LocationButton key={i} {...location} />
+        <LocationButton key={i} {...location} isActive={location.id==selectedLocation} onSelectLocation={onSelectLocation} />
       )}</ul>
     )
-
-
 
 }
 
