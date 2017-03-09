@@ -8,7 +8,7 @@ Objective: to recreate neighborhood map in React.js with Redux
 
 
 
-$> npm i
+$> npm install
 
 
 ```
